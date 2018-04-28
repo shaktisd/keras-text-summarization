@@ -18,11 +18,11 @@ def main():
     model_dir_path = './models'
 
     print('loading csv file ...')
-    df = pd.read_csv(data_dir_path + "/fake_or_real_news.csv")
+    df = pd.read_csv(data_dir_path + "/articles1.csv")
 
     print('extract configuration from input texts ...')
     Y = df.title
-    X = df['text']
+    X = df['content']
     config = fit_text(X, Y)
 
     print('configuration extracted from input texts ...')
