@@ -22,7 +22,7 @@ def main():
 
     print('extract configuration from input texts ...')
     Y = df.title
-    X = df['text']
+    X = df['content']
     config = fit_text(X, Y)
 
     print('configuration extracted from input texts ...')
