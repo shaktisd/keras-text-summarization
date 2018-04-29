@@ -12,8 +12,8 @@ def main():
     model_dir_path = './models'
 
     print('loading csv file ...')
-    df = pd.read_csv(data_dir_path + "/fake_or_real_news.csv")
-    X = df['text']
+    df = pd.read_csv(data_dir_path + "/new_article1.csv")
+    X = df['content']
     Y = df.title
 
     config = np.load(Seq2SeqGloVeSummarizerV2.get_config_file_path(model_dir_path=model_dir_path)).item()
