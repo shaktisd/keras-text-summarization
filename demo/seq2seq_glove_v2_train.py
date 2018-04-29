@@ -18,7 +18,7 @@ def main():
     model_dir_path = './models'
 
     print('loading csv file ...')
-    df = pd.read_csv(data_dir_path + "/all_article1.csv")
+    df = pd.read_csv(data_dir_path + "/new_article1.csv")
 
     print('extract configuration from input texts ...')
     Y = df.title
